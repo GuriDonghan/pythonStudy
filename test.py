@@ -1,3 +1,4 @@
+from xml.etree.ElementInclude import include
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,3 +14,4 @@ df = sns.load_dataset("mpg")
 df.head()
 df.tail()
 print(df.info())
+print(df.describe(include="object"))
