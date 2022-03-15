@@ -15,3 +15,6 @@ df.head()
 df.tail()
 print(df.info())
 print(df.describe(include="object"))
+
+
+print(df.nunique())
